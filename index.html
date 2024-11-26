@@ -7,7 +7,7 @@
     <title>My Literature Corner</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
             background-color: #f4f4f9;
@@ -15,18 +15,25 @@
         }
 
         header {
-            background-color: #3e4a89;
+            background-color: #2E3A87; /* Deep Blue */
             color: white;
             text-align: center;
-            padding: 20px;
+            padding: 30px;
+            border-bottom: 4px solid #FF6347; /* Tomato Red */
         }
 
         header h1 {
             margin: 0;
+            font-size: 3em;
+            font-family: 'Georgia', serif;
+        }
+
+        header p {
+            font-size: 1.2em;
         }
 
         nav {
-            background-color: #333;
+            background-color: #FF6347; /* Tomato Red */
             overflow: hidden;
         }
 
@@ -35,35 +42,38 @@
             display: block;
             color: white;
             text-align: center;
-            padding: 14px 20px;
+            padding: 18px 25px;
             text-decoration: none;
+            font-size: 1.1em;
         }
 
         nav a:hover {
-            background-color: #575757;
+            background-color: #2E3A87; /* Deep Blue */
+            color: #fff;
         }
 
         .container {
-            padding: 20px;
+            padding: 30px;
         }
 
         section {
             margin: 20px 0;
             padding: 20px;
             background-color: white;
-            border-radius: 5px;
-            box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
         }
 
         section h2 {
-            color: #3e4a89;
+            color: #FF6347; /* Tomato Red */
+            font-size: 2.2em;
         }
 
         footer {
-            background-color: #333;
+            background-color: #2E3A87; /* Deep Blue */
             color: white;
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             position: fixed;
             width: 100%;
             bottom: 0;
@@ -71,14 +81,52 @@
 
         .content {
             font-size: 1.1em;
-            line-height: 1.6;
+            line-height: 1.8;
+            color: #555;
         }
 
         .title {
-            color: #3e4a89;
+            color: #2E3A87; /* Deep Blue */
             font-size: 1.5em;
             margin-top: 15px;
         }
+
+        .contact-info {
+            background-color: #2E3A87; /* Deep Blue */
+            color: white;
+            padding: 25px;
+            margin-top: 40px;
+            border-radius: 8px;
+            text-align: center;
+        }
+
+        .contact-info p {
+            font-size: 1.2em;
+        }
+
+        .contact-info a {
+            color: #FF6347; /* Tomato Red */
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+
+        .author {
+            font-size: 1.3em;
+            font-style: italic;
+            color: #FF6347; /* Tomato Red */
+            margin-top: 10px;
+        }
+
+        .highlight {
+            background-color: #FFEB3B; /* Yellow */
+            padding: 5px;
+            border-radius: 5px;
+        }
+
     </style>
 </head>
 
@@ -99,14 +147,14 @@
         <section id="reflective-writing">
             <h2>Reflective Writing</h2>
             <div class="content">
-                <p><strong>Title: The Power of Perspective</strong></p>
+                <p><strong class="highlight">Title: The Power of Perspective</strong></p>
                 <p>Reflecting on moments of growth and change in life often provides a new lens through which to view the world. In one of my most pivotal experiences, I found myself at a crossroads—uncertain of my career path and overwhelmed with doubts. Yet, I soon realized that sometimes, it takes a step back to see the bigger picture.</p>
                 <p>As I navigated through the complexities of work, personal life, and self-discovery, I learned that challenges are not barriers but opportunities to evolve. This realization became clearer when I embraced the power of perspective. By reframing my thoughts and choosing a positive outlook, I unlocked new possibilities and embraced my potential for success.</p>
                 <p><em>"It is not the challenges we face that define us, but how we choose to face them."</em></p>
             </div>
 
             <div class="content">
-                <p><strong>Title: Journey through the Shadows</strong></p>
+                <p><strong class="highlight">Title: Journey through the Shadows</strong></p>
                 <p>Born into a bustling household teeming with siblings, my childhood was a tapestry woven with threads of affection and adversity. My father, a beacon of knowledge as both a headteacher and a music-mathematics aficionado, shared his wisdom, while my mother, a resilient soul tending to the family farm, instilled in us the virtues of perseverance and diligence.</p>
                 <p>Tragedy struck like a bolt of lightning on December 24th, 1999, when my mother, a victim of infidelity, departed this world, leaving behind a chasm in our hearts that could never be bridged. Her turbulent struggles—anguish over the loss of her firstborn due to a tragic abortion and betrayal brought on by my father's adultery—exacerbated the agony of her death. As a vulnerable eleven-year-old, I witnessed her secret battles, her spirit destroyed by despair, and her desperate attempts to escape the suffering.</p>
                 <p>In the aftermath of her untimely demise, our family fractured, the pieces scattered like shards of glass. My father's remarriage brought a semblance of stability, yet his newfound commitment faltered when it came to fulfilling his paternal obligations, particularly regarding my education. Financial constraints cast a pall over my aspirations, forcing me to abandon my dreams of secondary education after a mere month.</p>
@@ -117,46 +165,53 @@
                 <p>Determined to break free from the shackles of hardship, I seized an opportunity at Angels Hair Collection in Ruiru, Kenya, carving out a semblance of stability for myself and my daughters. After cutting ties with Kinoti and declaring independence, I embarked on a journey of self-discovery and strength, motivated by President Obama's inspirational words of resilience during his historic visit to Kenya.</p>
                 <p>When Kinoti's abandonment left us teetering on the brink of ruin, I refused to surrender to despair. With the steadfast support of my sister, I reignited the flames of my education, earning certifications in accounting and auditing. I am now pursuing a bachelor's degree in computer science, despite all the odds against me, thanks to a scholarship from the University of the People.</p>
                 <p>Amid my job search struggles, I sought guidance from Father Joseph Mangongo, the parish priest of Githurai in the diocese of Nairobi. Despite the corruption plaguing Caritas Nairobi's recruitment practices, Father Mangongo's unwavering support provided solace and assistance, both emotionally and financially. His compassion and guidance transcended traditional boundaries, earning him the endearing title of "daddy" in my eyes. As I navigate toward a brighter future, Father Mangongo's presence serves as a reminder of the enduring power of kindness and empathy in the face of adversity.</p>
-                <p>Through sheer tenacity and the benevolence of individuals like Anthony, who recognized the spark of potential within me, I find myself on the cusp of a brighter tomorrow. Anthony, hailing from Murang'a County, Kenya, and now residing in North America, embodies the spirit of hope and generosity that transcends borders and inspires us all. Today, as an audit trainee at E.C. Maina and Associates, Certified Public Accountants, I stand as a beacon of hope for others, a testament to the indomitable spirit that resides within each of us.</p>
-                <p>As my daughters pursue prosperous careers, I aspire to eventually express my gratitude to Anthony and perhaps even realize my ambition of traversing the entire United States of America—a voyage propelled by perseverance, forged in the furnace of misfortune, and enlightened by hope that endures even the darkest hours.</p>
+                <p>Through sheer tenacity and the benevolence of individuals like Anthony, who recognized the spark of potential within me, I find myself on the cusp of a brighter tomorrow. Anthony, hailing from Murang'a County, Kenya, and now residing in the U.S., became a pillar of support during my most challenging moments. His belief in me enabled me to continue pursuing my dreams and to embrace the beauty of resilience.</p>
             </div>
         </section>
 
         <section id="poems">
             <h2>Poems</h2>
             <div class="content">
-                <p><strong>Title: Whispers of the Wind</strong></p>
-                <p>The wind whispers softly in the night, <br>
-                Carrying secrets that take flight. <br>
-                In its breeze, I hear the call, <br>
-                Of dreams that rise and never fall.</p>
-                <p><strong>Title: Starlight Dreams</strong></p>
-                <p>In the silence of the starry sky, <br>
-                My dreams take wings and learn to fly. <br>
-                Beneath the moon’s tender gaze, <br>
-                I chase the stars through endless haze.</p>
+                <p><strong class="highlight">Title: The Silent Scream</strong></p>
+                <p>In the quiet of the night, I hear the sound,</p>
+                <p>Of a soul breaking, no one around.</p>
+                <p>It’s a silent scream, a cry from within,</p>
+                <p>Of a heart that longs to begin again.</p>
+                <p>But the world stays still, indifferent and cold,</p>
+                <p>As stories of despair and silence unfold.</p>
+                <p>And so I wait, in the dark and the rain,</p>
+                <p>Hoping tomorrow will ease the pain.</p>
+                <p>For in this silence, there's hope to be found,</p>
+                <p>Of love, of loss, of the tear-filled sky.</p>
             </div>
         </section>
 
         <section id="short-stories">
             <h2>Short Stories</h2>
             <div class="content">
-                <p><strong>Title: The Gift of Silence</strong></p>
-                <p>In a world filled with noise, there lived a man who had never spoken a word. People around him speculated that he had no voice, but he simply chose not to speak. One day, a young boy asked him, "Why don't you talk?" The man smiled and replied, "In silence, we hear the things that truly matter."</p>
+                <p><strong class="highlight">Title: The Last Dance</strong></p>
+                <p>In the quiet town of Waverley, an unexpected event brought a small community together. Emma, a young woman with dreams of becoming a dancer, had faced rejection her whole life. But as she danced her heart out on the street corner one chilly autumn evening, the applause that followed changed everything.</p>
             </div>
         </section>
 
         <section id="drama">
             <h2>Drama</h2>
             <div class="content">
-                <p><strong>Title: The Last Act</strong></p>
-                <p>As the curtain fell, the actors stood frozen, waiting for the audience’s applause. But the silence that followed was deafening. The lead actor, frustrated, whispered to his co-star, "Do you think we gave it all?" The co-star replied, "We did, but sometimes the greatest performance is not seen, but felt."</p>
+                <p><strong class="highlight">Title: The Broken Mirror</strong></p>
+                <p>The stage was set. A mirror in the center, cracked in half. The characters, each with their own secrets, surrounded it. The mirror represented their fractured relationships. As the story unfolded, the audience watched as they pieced together the broken shards, searching for redemption and healing.</p>
             </div>
+        </section>
+
+        <section class="contact-info">
+            <h2>Contact Information</h2>
+            <p>Location: Nairobi, Kenya</p>
+            <p>Phone: <a href="tel:+254123456789">+254 123 456 789</a></p>
+            <p>Email: <a href="mailto:mercy@example.com">mercy@example.com</a></p>
         </section>
     </div>
 
     <footer>
-        <p>&copy; 2024 My Literature Corner | All Rights Reserved</p>
+        <p>&copy; 2024 Mercy Mutua. All Rights Reserved.</p>
     </footer>
 </body>
 
